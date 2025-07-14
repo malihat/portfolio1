@@ -97,10 +97,10 @@ export default function Projects() {
 
   return (
     // onClick={() => openModal(project)}
-    <div className="mx-auto px-6 sm:px-6 lg:px-8">
+  <div className="mx-auto px-6 sm:px-6 lg:px-8">
       {/* <section> */}
   <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl font-bold text-center text-gray-800 mb-12" data-aos="zoom-in">
+    <h2 className="text-4xl font-bold text-center text-white mb-12" data-aos="zoom-in">
       Projects
     </h2>
 

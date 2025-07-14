@@ -17,8 +17,8 @@ const BinaryRain = () => {
 
     const zeroImage = new Image();
     const oneImage = new Image();
-    zeroImage.src = "/0.png";
-    oneImage.src = "/1.png";
+    zeroImage.src = "/000.png";
+    oneImage.src = "/111.png";
 
     const symbols = [];
     for (let i = 0; i < numSymbols; i++) {

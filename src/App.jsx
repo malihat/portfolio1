@@ -1,12 +1,14 @@
 import BinaryRain from "./components/BinaryRain";
-import Girl from "./assets/firstanimation.gif";
+import Girl from "./assets/firstanimation-ezgif.com-crop.gif";
 import "./App.css";
 import WorkExperience from "./components/WorkExperience";
 import Projects from "./components/Projects";
+import About from "./components/About";
+import Skills from "./components/Skills";
 import "./index.css";
-import Skills from './assets/Skills Icon.svg';
-import Work from './assets/Work Icon.svg';
-import Project from './assets/Projects Icon.svg';
+import Skill from './assets/Skills Icon.png';
+import Work from './assets/Work Icon.png';
+import Project from './assets/Projects Icon.png';
 
 function App() {
   return (
@@ -14,12 +16,12 @@ function App() {
       <header className="relative min-h-screen flex items-center justify-center text-center overflow-x-hidden">
         <BinaryRain />
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full overflow-x-hidden">
           {/* Responsive flex container */}
           <div className="flex flex-col lg:flex-row min-h-screen items-center justify-center gap-6 lg:gap-12 pt-16 lg:pt-0">
             
             {/* Text Section */}
-            <div className="flex-1 flex items-center justify-center text-center lg:text-left px-4">
+            <div className="flex-1 flex items-center text-center lg:text-left px-4">
               <div className="max-w-lg">
                 <h1 className="text-white text-5xl sm:text-5xl md:text-6xl font-bold">
                   Hey, I'm <span className="text-orange-400">{`<Maliha Tanweer />`}</span>
@@ -35,7 +37,7 @@ function App() {
               <img 
                 src={Girl} 
                 alt="Animated GIF" 
-                className="w-full max-w-[95%] xs:max-w-[360px] sm:max-w-[480px] lg:max-w-[600px] h-auto object-contain"
+                className="w-full max-w-[95%] xs:max-w-[360px] sm:max-w-[480px] lg:max-w-[500px] h-auto object-contain"
               />
             </div>
           </div>
@@ -43,13 +45,15 @@ function App() {
 
         {/* Bottom-aligned Icons */}
         <div className="absolute flex bottom-4 left-1/2 transform -translate-x-1/2 z-20 gap-2 sm:gap-4">
-          <img className="w-10 sm:w-12 hover:scale-110 transition-transform" src={Skills} alt="Skills Icon" />
-          <img className="w-10 sm:w-12 hover:scale-110 transition-transform" src={Project} alt="Project Icon" />
-          <img className="w-10 sm:w-12 hover:scale-110 transition-transform" src={Work} alt="Work Icon" />
+          <img className="icons hover:scale-110 transition-transform" src={Skill} alt="Skills Icon" />
+          <img className="icons hover:scale-110 transition-transform" src={Project} alt="Project Icon" />
+          <img className="icons hover:scale-110 transition-transform" src={Work} alt="Work Icon" />
         </div>
       </header>
 
-      <div className="relative z-20" id="work-projects">
+      <div className="relative z-20 overflow-x-hidden" id="work-projects">
+        <About />
+        <Skills />
         <WorkExperience />
         <Projects />
       </div>

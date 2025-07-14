@@ -53,17 +53,18 @@ const WorkExperience = () => {
 
     return (
         <>
-<div id="work-experience"
-   className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative py-10 md:py-16"
-//    className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 relative py-16" 
-   >
-  <h2 className="text-white text-4xl font-bold text-center mb-16" data-aos="zoom-in">
+            <div
+  id="work-experience"
+  className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
+>
+  <h2
+    className="text-white text-4xl font-bold text-center mb-12"
+    data-aos="zoom-in"
+  >
     Work Experience
   </h2>
 
-
-
-  <div className="relative space-y-10 md:space-y-24">
+  <div className="flex flex-col gap-y-12 md:gap-y-24 relative">
     {experiences.map((exp, index) => (
       <div
         key={exp.id}
@@ -73,22 +74,25 @@ const WorkExperience = () => {
         data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
         data-aos-delay={index * 200}
       >
-
-        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-white border-4 border-cyan-200 rounded-full h-10 w-10 items-center justify-center shadow-md">
-            <ImportantDevicesIcon className="h-6 w-6 text-cyan-400" />
+        {/* Timeline Dot - Only shows on md+ */}
+        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#02BCC9] rounded-full h-10 w-10 items-center justify-center shadow-md">
+          <ImportantDevicesIcon className="h-6 w-6 text-cyan-400" />
         </div>
 
         {/* Card */}
         <div
-          className={`bg-[#3b1433] shadow-lg rounded-xl mt-0 md:mt-12 p-6 md:p-8 w-full md:w-[45%] ${
-            index % 2 === 0 ? "md:ml-auto text-left" : "md:mr-auto text-left"
+          className={`bg-[#2e0f28] shadow-lg rounded-xl p-6 md:p-8 w-full md:w-[45%] ${
+            index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
           }`}
         >
-          <h3 className="text-white text-2xl font-semibold text-gray-800 mb-2">{exp.role}</h3>
+          <h3 className="text-white text-2xl font-semibold mb-2">
+            {exp.role}
+          </h3>
           <p className="text-white text-md mb-4">
-            <span className="font-medium">{exp.company}</span> &bull; {exp.duration}
+            <span className="font-medium">{exp.company}</span> &bull;{" "}
+            {exp.duration}
           </p>
-          <ul className="text-white list-disc list-inside space-y-2 text-gray-700 text-sm">
+          <ul className="list-disc list-inside space-y-2 text-white text-sm">
             {exp.description.map((desc, i) => (
               <li key={i}>{desc}</li>
             ))}
@@ -99,9 +103,52 @@ const WorkExperience = () => {
   </div>
 </div>
 
+
         </>
     );
 };
+
+
+
+
+//   <div className="relative flex flex-col gap-y-8 md:gap-y-24">
+//     {experiences.map((exp, index) => (
+//       <div
+//         key={exp.id}
+//         className={`relative z-10 flex flex-col md:flex-row items-center ${
+//           index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+//         }`}
+//         data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+//         data-aos-delay={index * 200}
+//       >
+
+//         <div className="hidden md:flex md:absolute left-1/2 transform -translate-x-1/2 z-20 bg-white border-4 border-cyan-200 rounded-full h-10 w-10 items-center justify-center shadow-md">
+//             <ImportantDevicesIcon className="h-6 w-6 text-cyan-400" />
+//         </div>
+
+//         {/* Card */}
+//         <div
+//           className={`bg-[#3b1433] shadow-lg rounded-xl mt-0 md:mt-12 p-6 md:p-8 w-full md:w-[45%] ${
+//             index % 2 === 0 ? "md:ml-auto text-left" : "md:mr-auto text-left"
+//           }`}
+//         >
+//           <h3 className="text-white text-2xl font-semibold text-gray-800 mb-2">{exp.role}</h3>
+//           <p className="text-white text-md mb-4">
+//             <span className="font-medium">{exp.company}</span> &bull; {exp.duration}
+//           </p>
+//           <ul className="text-white list-disc list-inside space-y-2 text-gray-700 text-sm">
+//             {exp.description.map((desc, i) => (
+//               <li key={i}>{desc}</li>
+//             ))}
+//           </ul>
+//         </div>
+//       </div>
+//     ))}
+//   </div>
+
+
+
+
 
 
             {/* <div id="work-experience" className="max-w-7xl mx-auto">
