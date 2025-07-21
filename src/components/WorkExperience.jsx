@@ -52,17 +52,11 @@ const WorkExperience = () => {
     }, []);
 
     return (
-        <>
-            <div
-  id="work-experience"
-  className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
->
-  <h2
-    className="text-white text-4xl font-bold text-center mb-12"
-    data-aos="zoom-in"
-  >
-    Work Experience
-  </h2>
+      <>
+        <div id="work-experience" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <h2 className="text-white text-4xl font-bold text-center mb-12" data-aos="zoom-in">
+            Work Experience
+          </h2>
 
   <div className="flex flex-col gap-y-12 md:gap-y-24 relative">
     {experiences.map((exp, index) => (
@@ -75,16 +69,17 @@ const WorkExperience = () => {
         data-aos-delay={index * 200}
       >
         {/* Timeline Dot - Only shows on md+ */}
-        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#02BCC9] rounded-full h-10 w-10 items-center justify-center shadow-md">
-          <ImportantDevicesIcon className="h-6 w-6 text-cyan-400" />
+        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#00B6D2] rounded-full h-10 w-10 items-center justify-center shadow-md">
+          <ImportantDevicesIcon className="h-6 w-6 text-[#00B6D2]" />
         </div>
 
         {/* Card */}
         <div
-          className={`bg-[#2e0f28] shadow-lg rounded-xl p-6 md:p-8 w-full md:w-[45%] ${
+          className={`bg-[#332847] shadow-lg rounded-xl p-6 md:p-8 w-full md:w-[45%] ${
             index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
           }`}
         >
+          
           <h3 className="text-white text-2xl font-semibold mb-2">
             {exp.role}
           </h3>
