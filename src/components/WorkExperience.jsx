@@ -69,7 +69,11 @@ const WorkExperience = () => {
         data-aos-delay={index * 200}
       >
         {/* Timeline Dot - Only shows on md+ */}
+<<<<<<< HEAD
         <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#00B6D2] rounded-full h-10 w-10 items-center justify-center shadow-md">
+=======
+        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#02BCC9] rounded-full h-10 w-10 items-center justify-center shadow-md">
+>>>>>>> b6dd0e9509da051e32110c63ea5e617efd0421c5
           <ImportantDevicesIcon className="h-6 w-6 text-[#00B6D2]" />
         </div>
 
