@@ -24,7 +24,7 @@ function App() {
             <div className="flex-1 flex items-center text-center lg:text-left px-4">
               <div className="max-w-lg">
                 <h1 className="text-white text-5xl sm:text-5xl md:text-6xl font-bold">
-                  Hey, I'm <span className="text-orange-400">{`<Maliha Tanweer />`}</span>
+                  Hey, I'm <span className="text-5xl sm:text-5xl md:text-6xl font-bold text-[#F58499]">{`<Maliha Tanweer />`}</span>
                 </h1>
                 <p className="text-white text-base xs:text-lg sm:text-xl mt-4 sm:mt-6 opacity-90">
                   I'm a self-taught web developer who likes to develop web apps.
@@ -46,6 +46,12 @@ function App() {
         {/* Bottom-aligned Icons */}
         <div className="absolute flex bottom-4 left-1/2 transform -translate-x-1/2 z-20 gap-2 sm:gap-4">
           <img className="icons hover:scale-110 transition-transform" src={Skill} alt="Skills Icon" />
+            {/* <!-- Tooltip --> */}
+  <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 
+               hidden group-hover:block 
+               bg-gray-900 text-white text-xs rounded py-1 px-2 whitespace-nowrap">
+    This is a tooltip
+  </span>
           <img className="icons hover:scale-110 transition-transform" src={Project} alt="Project Icon" />
           <img className="icons hover:scale-110 transition-transform" src={Work} alt="Work Icon" />
         </div>

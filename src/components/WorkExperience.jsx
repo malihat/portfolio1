@@ -72,14 +72,14 @@ const WorkExperience = () => {
 {/* <<<<<<< HEAD
         <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#00B6D2] rounded-full h-10 w-10 items-center justify-center shadow-md">
 ======= */}
-        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#02BCC9] rounded-full h-10 w-10 items-center justify-center shadow-md">
+        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#98026A] rounded-full h-10 w-10 items-center justify-center shadow-md">
 {/* >>>>>>> b6dd0e9509da051e32110c63ea5e617efd0421c5 */}
-          <ImportantDevicesIcon className="h-6 w-6 text-[#00B6D2]" />
+          <ImportantDevicesIcon className="h-6 w-6 text-[#98026A]" />
         </div>
 
         {/* Card */}
         <div
-          className={`bg-[#332847] shadow-lg rounded-xl p-6 md:p-8 w-full md:w-[45%] ${
+          className={`bg-gradient-to-b from-[#1E1125] to-[#4D2B60] shadow-lg rounded-xl p-6 md:p-8 w-full md:w-[45%] ${
             index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
           }`}
         >

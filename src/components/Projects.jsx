@@ -120,11 +120,11 @@ export default function Projects() {
               />
             </div>
 
-            <h3 className="text-2xl font-semibold text-blue-700 mb-2">
+            <h3 className="text-xl font-md text-white mb-2">
               {project.title}
             </h3>
 
-            <p className="text-gray-600 text-sm mb-6">
+            <p className="text-[#D2C6DE] text-sm mb-6">
               {project.description}
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function Projects() {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-800 text-white px-4 py-2 rounded-md text-sm hover:bg-gray-900 transition"
+              className="cursor-pointer border border-[#F58499] bg-[#F58499] text-white px-4 py-2 rounded-md text-sm hover:border-[#FF6E89] hover:bg-transparent transition"
             >
               GitHub
             </a>
@@ -143,7 +143,7 @@ export default function Projects() {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-blue-600 text-blue-600 px-4 py-2 rounded-md text-sm hover:bg-blue-50 transition"
+              className="cursor-pointer border border-[#F58499] text-white px-4 py-2 rounded-md text-sm hover:bg-[#F58499] transition"
             >
               Live Demo
             </a>
