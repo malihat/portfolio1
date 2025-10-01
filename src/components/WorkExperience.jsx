@@ -72,9 +72,9 @@ const WorkExperience = () => {
 {/* <<<<<<< HEAD
         <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#00B6D2] rounded-full h-10 w-10 items-center justify-center shadow-md">
 ======= */}
-        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#98026A] rounded-full h-10 w-10 items-center justify-center shadow-md">
+        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#AB477C] rounded-full h-10 w-10 items-center justify-center shadow-md">
 {/* >>>>>>> b6dd0e9509da051e32110c63ea5e617efd0421c5 */}
-          <ImportantDevicesIcon className="h-6 w-6 text-[#98026A]" />
+          <ImportantDevicesIcon className="h-6 w-6 text-[#AB477C]" />
         </div>
 
         {/* Card */}
